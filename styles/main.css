@@ -1,48 +1,10 @@
-*{
-  margin:0;
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-}
-.header{
-  display: flex;
-  align-items: center;
-  background-color: #00b4d8;
-  height: 70px;
-  padding: 8px 30px;
-}
-.header > div{
-  flex: 1;
-  color: #fff;
-  font-size: 22px;
-}
-.header-nav{
-  display: flex;
-  justify-content: flex-end;
-  flex:1;
-  
-}
-.header-menu{
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-.header-menu li a{
-  text-decoration: none;
-  color: #fff;
-}
-.header-menu :last-child a{
-  background-color: #fff;
-  color: #00b4d8;
-  padding: 8px 16px;
-  border-radius: 5px;
-}
 #hero{
   width: 100%;
   height: 700px;
   background-image: url('../images/hero.jpg');
   background-size: cover;
 }
-.plan-container{
+#plan-container{
   text-align: center;
   padding: 20px 0;
 }
@@ -78,4 +40,53 @@
   background-color: #fff;
   padding: 8px 40px;
   border-radius: 5px;
+}
+.plan-boxs button{
+  background-color: #00b4d8;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.plan-boxs button:hover{
+  background-color: black;
+}
+.plan-box-specific button{
+  background-color: black;
+}
+.plan-box-specific button:hover{
+  background-color: orange;
+}
+#features-container{
+  background-color: #f5f5f5;
+  text-align: center;
+  padding-bottom: 30px;
+}
+#features-container h1{
+  padding: 30px 0;
+}
+.features{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.features div{
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+.feature{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
